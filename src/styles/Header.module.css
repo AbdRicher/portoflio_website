@@ -1,0 +1,13 @@
+
+
+.main{
+    display: flex;
+    align-items: baseline;
+}
+
+.dot{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

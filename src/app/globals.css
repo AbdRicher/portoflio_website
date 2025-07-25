@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
+  --gradient-color1: hsla(193, 82%, 31%, 1);    /* #0E7490 */
+  --gradient-color2: hsla(186, 59%, 18%, 1);    /* #134449 */
+  --gradient-color3: hsla(194, 81%, 8%, 1);     /* #041F27 */
+  --gradient-color4: hsla(0, 0%, 0%, 1);
+  --font_color: #17bffc;        /* #000000 */
 }
 
 @theme inline {
@@ -14,13 +19,76 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
     --foreground: #ededed;
+    /* Optional dark mode adjustments */
+    --gradient-color1: hsla(193, 82%, 35%, 1);  /* Slightly brighter in dark mode */
+    --gradient-color2: hsla(186, 59%, 22%, 1);  /* Brighter mid-tone in dark mode */
   }
+} 
+
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: var(--foreground);
+  font-family: Poppins, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  
+  /* Fallback solid color */
+  background: var(--gradient-color1);
+  
+  /* Modern browsers */
+  background: radial-gradient(
+    circle,
+    var(--gradient-color1) 0%,
+    var(--gradient-color2) 0%,
+    var(--gradient-color3) 57%,
+    var(--gradient-color4) 100%
+  );
+  
+  /* Firefox */
+  background: -moz-radial-gradient(
+    circle,
+    var(--gradient-color1) 0%,
+    var(--gradient-color2) 0%,
+    var(--gradient-color3) 57%,
+    var(--gradient-color4) 100%
+  );
+  
+  /* Safari/Chrome */
+  background: -webkit-radial-gradient(
+    circle,
+    var(--gradient-color1) 0%,
+    var(--gradient-color2) 0%,
+    var(--gradient-color3) 57%,
+    var(--gradient-color4) 100%
+  );
+  
+  /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr="#0E7490",
+    endColorstr="#134449",
+    GradientType=1
+  );
+  
+  background-attachment: fixed;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+/* For Webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #000000; /* Black track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #939191; /* Black thumb */
+  border-radius: 4px;
+  border: 1px solid #333333; /* Slight border for visibility */
+}
+
+/* For Firefox */
+html {
+  scrollbar-color: #939191 #000000; /* Both thumb and track black */
+  scrollbar-width: thin;
 }
