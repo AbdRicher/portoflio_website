@@ -21,8 +21,8 @@ export default function projects() {
 </section>
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {/* Project 1 - Netflix Clone */}
-    <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-blue-500 transition-all duration-300">
-      <CarouselDarkVariantExample 
+    <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-blue-500 transition-all duration-300"  >
+      <CarouselDarkVariantExample customcss={"pt-10"}
         title={"Netflix Clone"} 
         path={["/Netflix/slide1.png","/Netflix/slide2.png","/Netflix/slide3.png"]} 
         label={["Front Page","FAQs Section","Footer"]}
@@ -40,7 +40,7 @@ export default function projects() {
 
     {/* Project 2 - Tempertaure Analysis */}
     <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-green-500 transition-all duration-300">
-      <CarouselDarkVariantExample 
+      <CarouselDarkVariantExample customcss={"pt-10"}
         title={"Tempertaure Analysis"} 
         path={["/temp_ana/dataframe1.png","/temp_ana/analysis2.png","/temp_ana/graph3.png"]} 
         label={["DataFrame","Analysis","Graph Plotting"]}
@@ -58,7 +58,7 @@ export default function projects() {
 
     {/* Project 3 - Emotion Detector */}
     <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-purple-500 transition-all duration-300">
-      <CarouselDarkVariantExample 
+      <CarouselDarkVariantExample customcss={"pt-10"}
         title={"Emotion Detector"} 
         path={["/Emotion_Dectector/slide1.png","/Emotion_Dectector/slide2.png","/Emotion_Dectector/slide3.png"]} 
         label={["Text Input Sad","Other Emotions","Other Emotions"]}
@@ -76,7 +76,7 @@ export default function projects() {
 
     {/* Project 4 - Anime Movie Recommender */}
     <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-yellow-500 transition-all duration-300">
-      <CarouselDarkVariantExample 
+      <CarouselDarkVariantExample customcss={"pt-10"}
         title={" Anime Movie Recommender"} 
         path={["/anime_recommander/slide1.png","/anime_recommander/slide2.png","/anime_recommander/slide3.png"]} 
         label={["InterFace","Movies","Recommandations"]}
@@ -94,7 +94,7 @@ export default function projects() {
 
     {/* Project 5 - Healthcare AI */}
     <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-red-500 transition-all duration-300">
-      <CarouselDarkVariantExample 
+      <CarouselDarkVariantExample customcss={"pt-10"}
         title={"American Roofing"} 
         path={["/am_roof/slide1.png","/am_roof/slide2.png","/am_roof/slide3.png"]} 
         label={["Interface","Form Submission","Contact with Admin(Personal)"]}
@@ -112,7 +112,7 @@ export default function projects() {
 
     {/* Project 6 - Credit Card Fraud */}
     <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-teal-500 transition-all duration-300">
-      <CarouselDarkVariantExample 
+      <CarouselDarkVariantExample customcss={"pt-10"}
         title={"Old Porfilio Website"} 
         path={["/old_pf/slide1.png","/old_pf/slide2.png","/old_pf/slide2.png"]} 
         label={["Projects","Footer","About"]}

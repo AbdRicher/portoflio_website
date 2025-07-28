@@ -4,10 +4,10 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 
-const CarouselDarkVariantExample = ({path,label,title}) => {
+const CarouselDarkVariantExample = ({path,label,title,customcss}) => {
   return (
     <div className="flex flex-col w-full max-w-5xl mx-auto rounded-md overflow-hidden shadow-lg justify-center items-center">
-      <div className="title my-10 text-2xl font-bold text-(--font_color)">{title}</div>
+      <div className={`title mb-10 text-2xl font-bold text-(--font_color) ${customcss} `}>{title}</div>
       <Carousel
         autoPlay
         infiniteLoop
